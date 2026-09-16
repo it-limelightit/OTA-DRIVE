@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.git
+.env
+*.log
+*.tsbuildinfo
+firmware-artifacts/*.bin
+Datameter_v3.1.0_test.zip
+Datameter_v3.1.0_test

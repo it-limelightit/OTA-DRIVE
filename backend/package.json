@@ -1,0 +1,30 @@
+{
+  "name": "@limelight-ota/backend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run build && node dist/server.js",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.883.0",
+    "@aws-sdk/s3-request-presigner": "^3.883.0",
+    "@fastify/cors": "^11.0.0",
+    "@fastify/jwt": "^10.2.2",
+    "@fastify/multipart": "^9.0.3",
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^17.4.2",
+    "fastify": "^5.2.1",
+    "mqtt": "^5.15.2",
+    "pg": "^8.13.3",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/pg": "^8.11.11",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}

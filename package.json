@@ -1,0 +1,12 @@
+{
+  "name": "limelight-ota",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["backend", "dashboard"],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=backend\" \"npm run dev --workspace=dashboard\"",
+    "build": "npm run build --workspace=backend && npm run build --workspace=dashboard",
+    "check": "npm run check --workspace=backend && npm run check --workspace=dashboard"
+  },
+  "devDependencies": { "concurrently": "^9.1.2" }
+}
