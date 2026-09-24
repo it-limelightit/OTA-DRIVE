@@ -1,0 +1,5433 @@
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995298760,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995298784,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995298818,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995298818,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995298841,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995298878,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995298915,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995298976,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995298992,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299011,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299013,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299055,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299074,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299075,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299129,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299161,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299180,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299217,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299217,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299274,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299274,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299277,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299319,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299369,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299393,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299411,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299427,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299446,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299466,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299485,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299486,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299508,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299508,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299592,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299661,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299683,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299700,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299700,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299761,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299778,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299833,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995299836,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300259,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300308,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300309,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300310,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300310,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300312,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300349,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300409,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300410,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300499,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300500,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300591,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300592,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300610,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300644,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300662,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300693,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300728,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300779,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300780,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300781,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300781,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300781,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300854,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300875,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300895,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300913,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300944,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995300965,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995301040,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995301059,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995301060,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995301076,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995301077,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995301095,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995301147,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995301148,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995301238,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995301343,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995301360,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995301362,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995301454,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995301455,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995301456,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995301826,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995301827,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995301859,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995301968,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995301968,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995301991,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995302211,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995302212,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995302398,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995302398,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995302519,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995302552,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995302603,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995302633,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995302663,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995302665,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995302761,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995302783,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995302890,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995302920,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995302939,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995302956,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995302957,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303065,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303107,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303147,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303280,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303281,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303281,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303413,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303414,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303414,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303415,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303437,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303512,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303512,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303570,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303571,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303597,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303672,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303674,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303674,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303675,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303716,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303779,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303797,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303839,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303839,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303857,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303908,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303940,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303940,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303952,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995303952,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304005,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304005,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304063,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304064,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304099,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304143,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304182,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304183,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304195,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304196,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304289,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304307,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304380,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304380,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304548,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304626,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304626,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304627,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304628,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304664,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304754,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304775,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304776,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304777,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304792,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304881,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304882,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304883,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304883,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304900,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995304984,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305003,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305035,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305035,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305072,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305113,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305128,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305148,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305149,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305165,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305218,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305240,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305259,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305284,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305333,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305390,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305390,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305391,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305391,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305476,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305513,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305581,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305606,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305607,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305669,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305670,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305689,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305690,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305733,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305734,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305868,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305868,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305884,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305906,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995305961,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306011,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306012,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306013,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306061,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306095,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306121,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306143,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306163,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306202,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306234,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306266,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306267,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306285,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306316,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306333,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306366,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306383,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306404,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306405,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306466,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306547,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306582,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306582,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306628,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306658,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306659,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306674,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306675,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995306958,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995307054,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995307071,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995307098,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995307148,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995307148,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995307185,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 50,
+    "time": 1789995308148,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "error": {
+        "length": 147,
+        "name": "error",
+        "severity": "ERROR",
+        "code": "42P08",
+        "detail": "text versus ota_status",
+        "position": "41",
+        "file": "parse_param.c",
+        "line": "219",
+        "routine": "variable_coerce_param_hook"
+    },
+    "topic": "Limelight/factory/DM-117/ota/status",
+    "msg": "MQTT message processing failed"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995308391,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9k",
+    "req": {
+        "method": "GET",
+        "url": "/api/devices",
+        "host": "localhost:3000",
+        "remoteAddress": "127.0.0.1",
+        "remotePort": 61201
+    },
+    "msg": "incoming request"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995308392,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9l",
+    "req": {
+        "method": "GET",
+        "url": "/api/firmware",
+        "host": "localhost:3000",
+        "remoteAddress": "127.0.0.1",
+        "remotePort": 61202
+    },
+    "msg": "incoming request"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995308392,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9m",
+    "req": {
+        "method": "GET",
+        "url": "/api/deployments",
+        "host": "localhost:3000",
+        "remoteAddress": "127.0.0.1",
+        "remotePort": 61203
+    },
+    "msg": "incoming request"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995308393,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9n",
+    "req": {
+        "method": "GET",
+        "url": "/api/overview",
+        "host": "localhost:3000",
+        "remoteAddress": "127.0.0.1",
+        "remotePort": 61204
+    },
+    "msg": "incoming request"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995308563,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9k",
+    "res": {
+        "statusCode": 200
+    },
+    "responseTime": 172.50279999990016,
+    "msg": "request completed"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995308632,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9l",
+    "res": {
+        "statusCode": 200
+    },
+    "responseTime": 239.99869999988005,
+    "msg": "request completed"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995308633,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9m",
+    "res": {
+        "statusCode": 200
+    },
+    "responseTime": 240.23870000010356,
+    "msg": "request completed"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995308633,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9n",
+    "res": {
+        "statusCode": 200
+    },
+    "responseTime": 240.16110000014305,
+    "msg": "request completed"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995370119,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9o",
+    "req": {
+        "method": "GET",
+        "url": "/api/devices",
+        "host": "localhost:3000",
+        "remoteAddress": "127.0.0.1",
+        "remotePort": 55045
+    },
+    "msg": "incoming request"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995370120,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9p",
+    "req": {
+        "method": "GET",
+        "url": "/api/firmware",
+        "host": "localhost:3000",
+        "remoteAddress": "127.0.0.1",
+        "remotePort": 55046
+    },
+    "msg": "incoming request"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995370122,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9q",
+    "req": {
+        "method": "GET",
+        "url": "/api/deployments",
+        "host": "localhost:3000",
+        "remoteAddress": "127.0.0.1",
+        "remotePort": 55047
+    },
+    "msg": "incoming request"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995370123,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9r",
+    "req": {
+        "method": "GET",
+        "url": "/api/overview",
+        "host": "localhost:3000",
+        "remoteAddress": "127.0.0.1",
+        "remotePort": 55048
+    },
+    "msg": "incoming request"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995370201,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9o",
+    "res": {
+        "statusCode": 200
+    },
+    "responseTime": 82.26160000031814,
+    "msg": "request completed"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995370434,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9q",
+    "res": {
+        "statusCode": 200
+    },
+    "responseTime": 312.4857000000775,
+    "msg": "request completed"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995370435,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9r",
+    "res": {
+        "statusCode": 200
+    },
+    "responseTime": 311.38670000014827,
+    "msg": "request completed"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995370507,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9p",
+    "res": {
+        "statusCode": 200
+    },
+    "responseTime": 387.62550000008196,
+    "msg": "request completed"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995416020,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9s",
+    "req": {
+        "method": "GET",
+        "url": "/api/devices",
+        "host": "localhost:3000",
+        "remoteAddress": "127.0.0.1",
+        "remotePort": 61613
+    },
+    "msg": "incoming request"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995416021,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9t",
+    "req": {
+        "method": "GET",
+        "url": "/api/firmware",
+        "host": "localhost:3000",
+        "remoteAddress": "127.0.0.1",
+        "remotePort": 61614
+    },
+    "msg": "incoming request"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995416023,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9u",
+    "req": {
+        "method": "GET",
+        "url": "/api/deployments",
+        "host": "localhost:3000",
+        "remoteAddress": "127.0.0.1",
+        "remotePort": 61615
+    },
+    "msg": "incoming request"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995416025,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9v",
+    "req": {
+        "method": "GET",
+        "url": "/api/overview",
+        "host": "localhost:3000",
+        "remoteAddress": "127.0.0.1",
+        "remotePort": 61616
+    },
+    "msg": "incoming request"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995416056,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9s",
+    "res": {
+        "statusCode": 200
+    },
+    "responseTime": 35.705000000074506,
+    "msg": "request completed"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995416244,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9t",
+    "res": {
+        "statusCode": 200
+    },
+    "responseTime": 223.44939999980852,
+    "msg": "request completed"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995416307,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9u",
+    "res": {
+        "statusCode": 200
+    },
+    "responseTime": 284.007200000342,
+    "msg": "request completed"
+}
+[
+    0
+] {
+    "level": 30,
+    "time": 1789995416307,
+    "pid": 12280,
+    "hostname": "Xiaomi",
+    "reqId": "req-9v",
+    "res": {
+        "statusCode": 200
+    },
+    "responseTime": 281.7532999999821,
+    "msg": "request completed"
+}

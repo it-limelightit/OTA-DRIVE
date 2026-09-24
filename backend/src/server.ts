@@ -91,7 +91,7 @@ app.get('/api/overview', async () => {
 });
 
 app.get('/api/devices', async () => {
-  const { rows } = await db.query(`SELECT d.id, d.device_uid AS "deviceUid", d.product, d.hardware_version AS "hardwareVersion", d.current_firmware AS "currentFirmware", d.target_firmware AS "targetFirmware", d.last_seen AS "lastSeen", d.ota_status AS "otaStatus", latest.status AS "deploymentStatus", latest.name AS "deploymentName", latest.command_sent_at AS "deploymentStartedAt", latest.finished_at AS "deploymentFinishedAt", CASE WHEN latest.command_sent_at IS NOT NULL THEN EXTRACT(EPOCH FROM (COALESCE(latest.finished_at, now()) - latest.command_sent_at))::int END AS "deploymentElapsedSeconds" FROM devices d LEFT JOIN LATERAL (SELECT dd.status, dd.command_sent_at, dd.finished_at, deployment.name FROM deployment_devices dd JOIN deployments deployment ON deployment.id=dd.deployment_id WHERE dd.device_id=d.id ORDER BY dd.command_sent_at DESC NULLS LAST, deployment.created_at DESC LIMIT 1) latest ON true ORDER BY d.last_seen DESC NULLS LAST LIMIT 100`);
+  const { rows } = await db.query(`SELECT d.id, d.device_uid AS "deviceUid", d.product, d.hardware_version AS "hardwareVersion", d.current_firmware AS "currentFirmware", d.target_firmware AS "targetFirmware", d.last_seen AS "lastSeen", d.ota_status AS "otaStatus", d.health_fault_active AS "faultActive", d.health_faults AS "faults", d.health_fault_updated_at AS "faultUpdatedAt", latest.status AS "deploymentStatus", latest.name AS "deploymentName", latest.command_sent_at AS "deploymentStartedAt", latest.finished_at AS "deploymentFinishedAt", CASE WHEN latest.command_sent_at IS NOT NULL THEN EXTRACT(EPOCH FROM (COALESCE(latest.finished_at, now()) - latest.command_sent_at))::int END AS "deploymentElapsedSeconds" FROM devices d LEFT JOIN LATERAL (SELECT dd.status, dd.command_sent_at, dd.finished_at, deployment.name FROM deployment_devices dd JOIN deployments deployment ON deployment.id=dd.deployment_id WHERE dd.device_id=d.id ORDER BY dd.command_sent_at DESC NULLS LAST, deployment.created_at DESC LIMIT 1) latest ON true ORDER BY d.last_seen DESC NULLS LAST LIMIT 100`);
   return rows;
 });
 
@@ -197,7 +197,7 @@ app.delete('/api/firmware/:id', async (request, reply) => {
 });
 
 app.get('/api/deployments', async () => {
-  const { rows } = await db.query(`SELECT d.id, d.name, d.status, d.max_concurrency AS "maxConcurrency", f.version AS "firmwareVersion", COUNT(dd.id)::int AS "targetCount", COUNT(dd.id) FILTER (WHERE dd.status='SUCCESS')::int AS "successCount", COUNT(dd.id) FILTER (WHERE dd.status='FAILED')::int AS "failedCount" FROM deployments d JOIN firmware_versions f ON f.id=d.firmware_id LEFT JOIN deployment_devices dd ON dd.deployment_id=d.id GROUP BY d.id,f.version ORDER BY d.created_at DESC`);
+  const { rows } = await db.query(`SELECT d.id, d.name, d.status, d.max_concurrency AS "maxConcurrency", f.version AS "firmwareVersion", COUNT(dd.id)::int AS "targetCount", COUNT(dd.id) FILTER (WHERE dd.status='SUCCESS')::int AS "successCount", COUNT(dd.id) FILTER (WHERE dd.status='FAILED')::int AS "failedCount", COUNT(dd.id) FILTER (WHERE dd.status = ANY(ARRAY['STARTED','DOWNLOADING','INSTALLING','REBOOTING']::ota_status[]))::int AS "activeCount", MAX(dd.last_progress_at) AS "lastProgressAt" FROM deployments d JOIN firmware_versions f ON f.id=d.firmware_id LEFT JOIN deployment_devices dd ON dd.deployment_id=d.id GROUP BY d.id,f.version ORDER BY d.created_at DESC`);
   return rows;
 });
 
@@ -224,6 +224,23 @@ app.post('/api/deployments/:id/start', async (request, reply) => {
   const { rows } = await db.query(`UPDATE deployments SET status='RUNNING', started_at=COALESCE(started_at, now()), paused_at=NULL WHERE id=$1 AND status='READY' RETURNING id, status, started_at AS "startedAt"`, [params.data.id]);
   if (!rows[0]) return reply.code(409).send({ error: 'Deployment does not exist or is not ready to start.' });
   return rows[0];
+});
+
+app.post('/api/deployments/:id/redeploy', async (request, reply) => {
+  const params = z.object({ id: z.string().uuid() }).safeParse(request.params);
+  if (!params.success) return reply.code(400).send({ error: 'A valid deployment ID is required.' });
+  const client = await db.connect();
+  try {
+    await client.query('BEGIN');
+    const deployment = await client.query(`SELECT d.id, f.status AS firmware_status FROM deployments d JOIN firmware_versions f ON f.id=d.firmware_id WHERE d.id=$1 FOR UPDATE`, [params.data.id]);
+    if (!deployment.rowCount) { await client.query('ROLLBACK'); return reply.code(404).send({ error: 'Deployment not found.' }); }
+    if (deployment.rows[0].firmware_status !== 'READY') { await client.query('ROLLBACK'); return reply.code(409).send({ error: 'The deployment firmware must be READY before redeploying.' }); }
+    await client.query(`UPDATE deployment_devices SET status='PENDING', retry_count=0, last_attempt_at=NULL, next_retry_at=NULL, last_error=NULL, completed_at=NULL, command_id=NULL, command_sent_at=NULL, claimed_at=NULL, claimed_by=NULL, started_at=NULL, finished_at=NULL, last_progress_percent=NULL, last_progress_at=NULL WHERE deployment_id=$1`, [params.data.id]);
+    const { rows } = await client.query(`UPDATE deployments SET status='RUNNING', started_at=now(), paused_at=NULL, completed_at=NULL WHERE id=$1 RETURNING id, status, started_at AS "startedAt"`, [params.data.id]);
+    await client.query(`INSERT INTO ota_events(device_id, deployment_id, event_type, metadata) SELECT device_id, deployment_id, 'DEPLOYMENT_REDEPLOYED', jsonb_build_object('restarted_at', now()) FROM deployment_devices WHERE deployment_id=$1`, [params.data.id]);
+    await client.query('COMMIT');
+    return rows[0];
+  } catch (error) { await client.query('ROLLBACK'); throw error; } finally { client.release(); }
 });
 
 app.post('/api/deployments', async (request, reply) => {

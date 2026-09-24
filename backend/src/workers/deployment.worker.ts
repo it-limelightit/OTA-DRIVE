@@ -2,6 +2,7 @@ import { randomUUID } from 'node:crypto';
 import type pg from 'pg';
 import type { MqttClient } from 'mqtt';
 import { publishOtaCommand } from '../services/mqtt/mqtt.service.js';
+import { getFirmwareDownloadUrl } from '../services/storage/storage.service.js';
 
 const ACTIVE_STATUSES = ['STARTED', 'DOWNLOADING', 'INSTALLING', 'REBOOTING'];
 
@@ -36,8 +37,17 @@ async function deliverPendingDevices(db: pg.Pool, mqttClient: MqttClient, log: W
       const claimed = await claimDevice(db, deployment.id);
       if (!claimed) break;
       try {
-        await publishOtaCommand(mqttClient, claimed.deviceUid, { msg_type: 'ota.check' });
-        log.info({ deviceUid: claimed.deviceUid, deploymentId: deployment.id }, 'OTA check published');
+        const url = await getFirmwareDownloadUrl(deployment.fileKey);
+        await publishOtaCommand(mqttClient, claimed.deviceUid, {
+          msg_type: 'private_ota.start',
+          command_id: claimed.commandId,
+          deployment_id: deployment.id,
+          version: deployment.version,
+          url,
+          size: Number(deployment.fileSize),
+          sha256: deployment.sha256
+        });
+        log.info({ deviceUid: claimed.deviceUid, deploymentId: deployment.id }, 'OTA manifest published');
       } catch (error) {
         await db.query(`UPDATE deployment_devices SET status='PENDING', claimed_at=NULL, claimed_by=NULL, command_sent_at=NULL, last_error=$2, next_retry_at=now() + interval '30 seconds' WHERE id=$1`, [claimed.assignmentId, error instanceof Error ? error.message : 'MQTT publish failed']);
         log.warn({ error, deviceUid: claimed.deviceUid, deploymentId: deployment.id }, 'OTA command could not be published');
