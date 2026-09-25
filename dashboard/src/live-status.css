@@ -31,3 +31,7 @@
   color: #99a5b5;
   font-size: 9px;
 }
+
+.device-dot.offline { background: #9ba7b7; }
+.badge-online { background: #e7f8ee; color: #258050; }
+.badge-offline { background: #edf0f4; color: #68778d; }
