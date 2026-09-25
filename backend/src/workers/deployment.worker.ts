@@ -28,6 +28,35 @@ export function startDeploymentWorker(db: pg.Pool, mqttClient: MqttClient | unde
 }
 
 async function deliverPendingDevices(db: pg.Pool, mqttClient: MqttClient, log: WorkerLogger) {
+  // Covers a service restart between the device's post-boot health report and
+  // its OTA-status acknowledgement. Only active assignments whose target is
+  // exactly the firmware currently reported by the device can be completed.
+  const reconciled = await db.query(`WITH completed AS (
+    UPDATE deployment_devices dd
+    SET status='SUCCESS', finished_at=COALESCE(dd.finished_at, now()),
+        last_progress_percent=100, last_progress_at=now(), last_error=NULL
+    FROM deployments dep
+    JOIN firmware_versions f ON f.id=dep.firmware_id,
+         devices device
+    WHERE dd.deployment_id=dep.id
+      AND device.id=dd.device_id
+      AND dd.status = ANY(ARRAY['STARTED','DOWNLOADING','INSTALLING','REBOOTING']::ota_status[])
+      AND f.version=regexp_replace(trim(device.current_firmware), '^v@?', '', 'i')
+    RETURNING device.id
+  )
+  UPDATE devices device SET ota_status='SUCCESS', updated_at=now()
+  FROM completed WHERE device.id=completed.id`);
+  if (reconciled.rowCount) log.info({ count: reconciled.rowCount }, 'Reconciled post-reboot OTA success');
+  await db.query(`UPDATE deployments d
+    SET status=CASE
+      WHEN EXISTS (SELECT 1 FROM deployment_devices dd WHERE dd.deployment_id=d.id AND dd.status IN ('FAILED','ROLLED_BACK')) THEN 'FAILED'::deployment_status
+      WHEN EXISTS (SELECT 1 FROM deployment_devices dd WHERE dd.deployment_id=d.id AND dd.status='CANCELLED') THEN 'CANCELLED'::deployment_status
+      ELSE 'COMPLETED'::deployment_status
+    END,
+    completed_at=COALESCE(d.completed_at, now())
+    WHERE d.status='RUNNING'
+      AND EXISTS (SELECT 1 FROM deployment_devices dd WHERE dd.deployment_id=d.id)
+      AND NOT EXISTS (SELECT 1 FROM deployment_devices dd WHERE dd.deployment_id=d.id AND dd.status NOT IN ('SUCCESS','FAILED','ROLLED_BACK','CANCELLED'))`);
   const deployments = await db.query(`SELECT d.id, d.max_concurrency AS "maxConcurrency", f.version, f.file_key AS "fileKey", f.file_size AS "fileSize", f.sha256 FROM deployments d JOIN firmware_versions f ON f.id=d.firmware_id WHERE d.status='RUNNING' AND f.status='READY' ORDER BY d.created_at ASC`);
   for (const deployment of deployments.rows) {
     const active = await db.query(`SELECT COUNT(*)::int AS count FROM deployment_devices WHERE deployment_id=$1 AND status = ANY($2::ota_status[])`, [deployment.id, ACTIVE_STATUSES]);
@@ -60,7 +89,7 @@ async function claimDevice(db: pg.Pool, deploymentId: string) {
   const client = await db.connect();
   try {
     await client.query('BEGIN');
-    const result = await client.query(`SELECT dd.id AS "assignmentId", d.device_uid AS "deviceUid" FROM deployment_devices dd JOIN devices d ON d.id=dd.device_id WHERE dd.deployment_id=$1 AND dd.status='PENDING' AND (dd.next_retry_at IS NULL OR dd.next_retry_at <= now()) AND d.connection_status='ONLINE' AND d.last_status_at > now() - interval '10 minutes' AND dd.claimed_at IS NULL ORDER BY d.last_status_at DESC FOR UPDATE OF dd SKIP LOCKED LIMIT 1`, [deploymentId]);
+    const result = await client.query(`SELECT dd.id AS "assignmentId", d.device_uid AS "deviceUid" FROM deployment_devices dd JOIN deployments dep ON dep.id=dd.deployment_id AND dep.status='RUNNING' JOIN devices d ON d.id=dd.device_id WHERE dd.deployment_id=$1 AND dd.status='PENDING' AND (dd.next_retry_at IS NULL OR dd.next_retry_at <= now()) AND d.connection_status='ONLINE' AND d.last_status_at > now() - interval '10 minutes' AND dd.claimed_at IS NULL ORDER BY d.last_status_at DESC FOR UPDATE OF dd SKIP LOCKED LIMIT 1`, [deploymentId]);
     if (!result.rows[0]) { await client.query('ROLLBACK'); return undefined; }
     const commandId = randomUUID();
     await client.query(`UPDATE deployment_devices SET status='STARTED', command_id=$2, claimed_at=now(), claimed_by=$3, command_sent_at=now(), started_at=COALESCE(started_at, now()), last_attempt_at=now(), retry_count=retry_count+1 WHERE id=$1`, [result.rows[0].assignmentId, commandId, `ota-worker-${process.pid}`]);

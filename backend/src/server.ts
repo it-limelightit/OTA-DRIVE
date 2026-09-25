@@ -20,6 +20,11 @@ const app = Fastify({ logger: true });
 const db = new pg.Pool({ connectionString: process.env.DATABASE_URL });
 db.on('error', (error) => app.log.error(error, 'PostgreSQL pool connection error'));
 let mqttClient: ReturnType<typeof startMqtt>;
+const deviceEventListeners = new Set<(deviceUid: string) => void>();
+const notifyDeviceChanged = (deviceUid: string) => {
+  for (const listener of deviceEventListeners) listener(deviceUid);
+};
+const onlineThresholdSeconds = Math.min(86_400, Math.max(10, Number(process.env.MQTT_ONLINE_THRESHOLD_SECONDS ?? 90) || 90));
 // Works from both `backend/src` (tsx development) and `backend/dist` (production build).
 const migrationsDir = join(here, '../../database/migrations');
 
@@ -47,9 +52,11 @@ async function ensureInitialAdmin() {
   app.log.warn({ email }, 'Initial administrator account created. Change the bootstrap password after first login.');
 }
 
-const deviceSchema = z.object({ deviceUid: z.string().trim().min(3), product: z.string().trim().min(1), hardwareVersion: z.string().trim().min(1), currentFirmware: z.string().trim().min(1).optional() });
-const firmwareSchema = z.object({ product: z.string().trim().min(1), hardwareVersion: z.string().trim().min(1), version: z.string().trim().regex(/^\d+\.\d+\.\d+$/, 'Use MAJOR.MINOR.PATCH'), fileKey: z.string().min(1), fileSize: z.number().int().positive(), sha256: z.string().regex(/^[a-f0-9]{64}$/, 'Must be a lowercase SHA-256 hash'), releaseNotes: z.string().max(10_000).default(''), createdBy: z.string().min(1).default('local-admin') });
-const firmwareUploadSchema = z.object({ product: z.string().trim().min(1).max(80), hardwareVersion: z.string().trim().min(1).max(80), version: z.string().trim().regex(/^\d+\.\d+\.\d+$/, 'Use MAJOR.MINOR.PATCH'), releaseNotes: z.string().max(10_000).default('') });
+const flashSizeSchema = z.number().int().refine((size) => [4, 8, 16].includes(size), 'Flash size must be 4, 8, or 16 MB');
+const canonicalProduct = (value: string, deviceUid?: string) => /^DM-\d+/i.test(deviceUid ?? '') || value.trim().toLowerCase() === 'datameter' ? 'DM' : value.trim();
+const deviceSchema = z.object({ deviceUid: z.string().trim().min(3), product: z.string().trim().min(1), hardwareVersion: z.string().trim().min(1), flashSizeMb: flashSizeSchema.optional(), currentFirmware: z.string().trim().min(1).optional() });
+const firmwareSchema = z.object({ product: z.string().trim().min(1), hardwareVersion: z.string().trim().min(1), flashSizeMb: flashSizeSchema, version: z.string().trim().regex(/^\d+\.\d+\.\d+$/, 'Use MAJOR.MINOR.PATCH'), fileKey: z.string().min(1), fileSize: z.number().int().positive(), sha256: z.string().regex(/^[a-f0-9]{64}$/, 'Must be a lowercase SHA-256 hash'), releaseNotes: z.string().max(10_000).default(''), createdBy: z.string().min(1).default('local-admin') });
+const firmwareUploadSchema = z.object({ product: z.string().trim().min(1).max(80), hardwareVersion: z.string().trim().min(1).max(80), flashSizeMb: z.coerce.number().pipe(flashSizeSchema), version: z.string().trim().regex(/^\d+\.\d+\.\d+$/, 'Use MAJOR.MINOR.PATCH'), releaseNotes: z.string().max(10_000).default('') });
 const deploymentSchema = z.object({ name: z.string().min(3).max(120), firmwareId: z.string().uuid(), deviceIds: z.array(z.string().uuid()).min(1).max(1000), maxConcurrency: z.number().int().min(1).max(100).default(10), createdBy: z.string().min(1).default('local-admin') });
 const loginSchema = z.object({ email: z.string().email(), password: z.string().min(1) });
 const firmwareStatusSchema = z.object({ status: z.enum(['READY', 'ARCHIVED']) });
@@ -90,16 +97,39 @@ app.get('/api/overview', async () => {
   return rows[0];
 });
 
+const deviceSelect = `SELECT d.id, d.device_uid AS "deviceUid", CASE WHEN lower(d.product)='datameter' OR d.device_uid ~* '^DM-[0-9]+' THEN 'DM' ELSE d.product END AS product, d.hardware_version AS "hardwareVersion", d.flash_size_mb AS "flashSizeMb", d.current_firmware AS "currentFirmware", d.target_firmware AS "targetFirmware", d.last_seen AS "lastSeen", CASE WHEN d.last_status_at >= now() - make_interval(secs => ${onlineThresholdSeconds}) THEN 'ONLINE' ELSE 'OFFLINE' END AS "connectionStatus", d.ota_status AS "otaStatus", d.health_fault_active AS "faultActive", d.health_faults AS faults, d.health_fault_updated_at AS "faultUpdatedAt", latest.status AS "deploymentStatus", latest.name AS "deploymentName", latest.command_sent_at AS "deploymentStartedAt", latest.finished_at AS "deploymentFinishedAt", CASE WHEN latest.command_sent_at IS NOT NULL THEN EXTRACT(EPOCH FROM (COALESCE(latest.finished_at, CASE WHEN latest.status IN ('SUCCESS','FAILED','ROLLED_BACK','CANCELLED') THEN COALESCE(latest.last_progress_at, latest.command_sent_at) ELSE now() END) - latest.command_sent_at))::int END AS "deploymentElapsedSeconds" FROM devices d LEFT JOIN LATERAL (SELECT dd.status, dd.command_sent_at, dd.finished_at, dd.last_progress_at, deployment.name FROM deployment_devices dd JOIN deployments deployment ON deployment.id=dd.deployment_id WHERE dd.device_id=d.id ORDER BY dd.command_sent_at DESC NULLS LAST, deployment.created_at DESC LIMIT 1) latest ON true`;
+
 app.get('/api/devices', async () => {
-  const { rows } = await db.query(`SELECT d.id, d.device_uid AS "deviceUid", d.product, d.hardware_version AS "hardwareVersion", d.current_firmware AS "currentFirmware", d.target_firmware AS "targetFirmware", d.last_seen AS "lastSeen", d.ota_status AS "otaStatus", d.health_fault_active AS "faultActive", d.health_faults AS "faults", d.health_fault_updated_at AS "faultUpdatedAt", latest.status AS "deploymentStatus", latest.name AS "deploymentName", latest.command_sent_at AS "deploymentStartedAt", latest.finished_at AS "deploymentFinishedAt", CASE WHEN latest.command_sent_at IS NOT NULL THEN EXTRACT(EPOCH FROM (COALESCE(latest.finished_at, now()) - latest.command_sent_at))::int END AS "deploymentElapsedSeconds" FROM devices d LEFT JOIN LATERAL (SELECT dd.status, dd.command_sent_at, dd.finished_at, deployment.name FROM deployment_devices dd JOIN deployments deployment ON deployment.id=dd.deployment_id WHERE dd.device_id=d.id ORDER BY dd.command_sent_at DESC NULLS LAST, deployment.created_at DESC LIMIT 1) latest ON true ORDER BY d.last_seen DESC NULLS LAST LIMIT 100`);
+  // Device position is deliberately stable. MQTT traffic must update a row,
+  // never cause it to jump to a different position in the fleet table.
+  const { rows } = await db.query(`${deviceSelect} ORDER BY d.created_at ASC, d.device_uid ASC`);
   return rows;
+});
+
+app.get('/api/devices/by-uid/:deviceUid', async (request, reply) => {
+  const params = z.object({ deviceUid: z.string().trim().min(3) }).safeParse(request.params);
+  if (!params.success) return reply.code(400).send({ error: 'A valid device UID is required.' });
+  const { rows } = await db.query(`${deviceSelect} WHERE d.device_uid=$1`, [params.data.deviceUid]);
+  if (!rows[0]) return reply.code(404).send({ error: 'Device not found.' });
+  return rows[0];
+});
+
+app.get('/api/device-events', async (request, reply) => {
+  reply.hijack();
+  const raw = reply.raw;
+  raw.writeHead(200, { 'Content-Type': 'text/event-stream', 'Cache-Control': 'no-cache, no-transform', Connection: 'keep-alive', 'X-Accel-Buffering': 'no' });
+  raw.write(': connected\n\n');
+  const listener = (deviceUid: string) => raw.write(`event: device.changed\ndata: ${JSON.stringify({ deviceUid })}\n\n`);
+  deviceEventListeners.add(listener);
+  const heartbeat = setInterval(() => raw.write(': keepalive\n\n'), 15_000);
+  request.raw.on('close', () => { clearInterval(heartbeat); deviceEventListeners.delete(listener); });
 });
 
 app.post('/api/devices', async (request, reply) => {
   const parsed = deviceSchema.safeParse(request.body);
   if (!parsed.success) return reply.code(400).send({ error: parsed.error.flatten() });
   const input = parsed.data;
-  const { rows } = await db.query(`INSERT INTO devices(device_uid, product, hardware_version, current_firmware, last_seen) VALUES ($1,$2,$3,$4,now()) ON CONFLICT(device_uid) DO UPDATE SET product=EXCLUDED.product, hardware_version=EXCLUDED.hardware_version, current_firmware=COALESCE(EXCLUDED.current_firmware, devices.current_firmware), last_seen=now(), updated_at=now() RETURNING id, device_uid AS "deviceUid"`, [input.deviceUid, input.product, input.hardwareVersion, input.currentFirmware ?? null]);
+  const { rows } = await db.query(`INSERT INTO devices(device_uid, product, hardware_version, flash_size_mb, current_firmware, last_seen) VALUES ($1,$2,$3,$4,$5,now()) ON CONFLICT(device_uid) DO UPDATE SET product=EXCLUDED.product, hardware_version=EXCLUDED.hardware_version, flash_size_mb=COALESCE(EXCLUDED.flash_size_mb, devices.flash_size_mb), current_firmware=COALESCE(EXCLUDED.current_firmware, devices.current_firmware), last_seen=now(), updated_at=now() RETURNING id, device_uid AS "deviceUid"`, [input.deviceUid, canonicalProduct(input.product, input.deviceUid), input.hardwareVersion, input.flashSizeMb ?? null, input.currentFirmware ?? null]);
   return reply.code(201).send(rows[0]);
 });
 
@@ -122,7 +152,7 @@ app.delete('/api/devices/:id', async (request, reply) => {
 });
 
 app.get('/api/firmware', async () => {
-  const { rows } = await db.query(`SELECT id, product, hardware_version AS "hardwareVersion", version, file_size AS "fileSize", sha256, release_notes AS "releaseNotes", status, created_at AS "createdAt" FROM firmware_versions ORDER BY created_at DESC`);
+  const { rows } = await db.query(`SELECT id, CASE WHEN lower(product)='datameter' THEN 'DM' ELSE product END AS product, CASE WHEN product IN ('DM','Datameter') AND hardware_version ~ '^(4|8|16)$' THEN 'ESP32-S3' ELSE hardware_version END AS "hardwareVersion", COALESCE(flash_size_mb, CASE WHEN product IN ('DM','Datameter') AND hardware_version ~ '^(4|8|16)$' THEN hardware_version::integer END) AS "flashSizeMb", version, file_size AS "fileSize", sha256, release_notes AS "releaseNotes", status, created_at AS "createdAt" FROM firmware_versions ORDER BY created_at DESC`);
   return rows;
 });
 
@@ -131,7 +161,7 @@ app.post('/api/firmware', async (request, reply) => {
   if (!parsed.success) return reply.code(400).send({ error: parsed.error.flatten() });
   const f = parsed.data;
   try {
-    const { rows } = await db.query(`INSERT INTO firmware_versions(product, hardware_version, version, file_key, file_size, sha256, release_notes, created_by) VALUES ($1,$2,$3,$4,$5,$6,$7,$8) RETURNING id, status`, [f.product, f.hardwareVersion, f.version, f.fileKey, f.fileSize, f.sha256, f.releaseNotes, f.createdBy]);
+    const { rows } = await db.query(`INSERT INTO firmware_versions(product, hardware_version, flash_size_mb, version, file_key, file_size, sha256, release_notes, created_by) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9) RETURNING id, status`, [canonicalProduct(f.product), f.hardwareVersion, f.flashSizeMb, f.version, f.fileKey, f.fileSize, f.sha256, f.releaseNotes, f.createdBy]);
     return reply.code(201).send(rows[0]);
   } catch (error: unknown) {
     if ((error as { code?: string }).code === '23505') return reply.code(409).send({ error: 'Firmware version or storage key already exists.' });
@@ -149,18 +179,19 @@ app.post('/api/firmware/upload', async (request, reply) => {
   if (!binary.length) return reply.code(400).send({ error: 'Firmware file is empty.' });
   if (upload.file.truncated) return reply.code(413).send({ error: 'Firmware file exceeds FIRMWARE_MAX_UPLOAD_BYTES.' });
   const fieldValue = (name: string) => { const field = upload.fields[name]; return field && !Array.isArray(field) && field.type === 'field' ? field.value : undefined; };
-  const parsed = firmwareUploadSchema.safeParse({ product: fieldValue('product'), hardwareVersion: fieldValue('hardwareVersion'), version: fieldValue('version'), releaseNotes: fieldValue('releaseNotes') ?? '' });
+  const parsed = firmwareUploadSchema.safeParse({ product: fieldValue('product'), hardwareVersion: fieldValue('hardwareVersion'), flashSizeMb: fieldValue('flashSizeMb'), version: fieldValue('version'), releaseNotes: fieldValue('releaseNotes') ?? '' });
   if (!parsed.success) return reply.code(400).send({ error: 'Enter a product, hardware revision, and a version in MAJOR.MINOR.PATCH format.' });
   const input = parsed.data;
-  const duplicate = await db.query('SELECT 1 FROM firmware_versions WHERE product=$1 AND hardware_version=$2 AND version=$3', [input.product, input.hardwareVersion, input.version]);
+  const normalizedProduct = canonicalProduct(input.product);
+  const duplicate = await db.query(`SELECT 1 FROM firmware_versions WHERE (lower(product)=lower($1) OR (lower($1)='dm' AND lower(product)='datameter')) AND hardware_version=$2 AND COALESCE(flash_size_mb, CASE WHEN hardware_version ~ '^(4|8|16)$' THEN hardware_version::integer END)=$3 AND version=$4`, [normalizedProduct, input.hardwareVersion, input.flashSizeMb, input.version]);
   if (duplicate.rowCount) return reply.code(409).send({ error: 'A firmware version already exists for this product and hardware version.' });
   const sha256 = createHash('sha256').update(binary).digest('hex');
   const safePart = (value: string) => value.replace(/[^A-Za-z0-9._-]/g, '_');
-  const fileKey = `firmware/${safePart(input.product)}/${safePart(input.hardwareVersion)}/${input.version}/${sha256}.bin`;
+  const fileKey = `firmware/${safePart(normalizedProduct)}/${safePart(input.hardwareVersion)}/${input.flashSizeMb}mb/${input.version}/${sha256}.bin`;
   try { await putFirmware(fileKey, binary, sha256); }
   catch (error) { request.log.error(error, 'Firmware storage upload failed'); return reply.code(503).send({ error: 'Firmware object storage is unavailable.' }); }
   try {
-    const { rows } = await db.query(`INSERT INTO firmware_versions(product, hardware_version, version, file_key, file_size, sha256, release_notes, created_by) VALUES ($1,$2,$3,$4,$5,$6,$7,$8) RETURNING id, status, version, file_size AS "fileSize", sha256`, [input.product, input.hardwareVersion, input.version, fileKey, binary.length, sha256, input.releaseNotes, (request.user as { email?: string }).email ?? 'local-admin']);
+    const { rows } = await db.query(`INSERT INTO firmware_versions(product, hardware_version, flash_size_mb, version, file_key, file_size, sha256, release_notes, created_by) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9) RETURNING id, status, version, flash_size_mb AS "flashSizeMb", file_size AS "fileSize", sha256`, [normalizedProduct, input.hardwareVersion, input.flashSizeMb, input.version, fileKey, binary.length, sha256, input.releaseNotes, (request.user as { email?: string }).email ?? 'local-admin']);
     return reply.code(201).send(rows[0]);
   } catch (error: unknown) {
     await deleteFirmware(fileKey).catch((cleanupError) => request.log.error(cleanupError, 'Failed to remove orphaned firmware object'));
@@ -218,6 +249,28 @@ app.delete('/api/deployments/:id', async (request, reply) => {
   } catch (error) { await client.query('ROLLBACK'); throw error; } finally { client.release(); }
 });
 
+app.patch('/api/deployments/:id/status', async (request, reply) => {
+  const params = z.object({ id: z.string().uuid() }).safeParse(request.params);
+  const body = z.object({ status: z.enum(['DRAFT', 'READY', 'RUNNING', 'PAUSED', 'CANCELLED', 'COMPLETED', 'FAILED']) }).safeParse(request.body);
+  if (!params.success) return reply.code(400).send({ error: 'A valid deployment ID is required.' });
+  if (!body.success) return reply.code(400).send({ error: 'Choose a valid deployment status.' });
+  const client = await db.connect();
+  try {
+    await client.query('BEGIN');
+    const deployment = await client.query('SELECT id, status FROM deployments WHERE id=$1 FOR UPDATE', [params.data.id]);
+    if (!deployment.rowCount) { await client.query('ROLLBACK'); return reply.code(404).send({ error: 'Deployment not found.' }); }
+    if (body.data.status === 'CANCELLED') {
+      await client.query(`UPDATE deployment_devices SET status='CANCELLED', finished_at=COALESCE(finished_at, now()), last_error=COALESCE(last_error, 'Cancelled by operator') WHERE deployment_id=$1 AND status='PENDING'`, [params.data.id]);
+    }
+    if (body.data.status === 'READY' || body.data.status === 'RUNNING') {
+      await client.query(`UPDATE deployment_devices SET status='PENDING', finished_at=NULL, last_error=NULL WHERE deployment_id=$1 AND status='CANCELLED' AND last_error='Cancelled by operator'`, [params.data.id]);
+    }
+    const { rows } = await client.query(`UPDATE deployments SET status=$2::deployment_status, paused_at=CASE WHEN $2::deployment_status='PAUSED'::deployment_status THEN COALESCE(paused_at, now()) ELSE NULL END, completed_at=CASE WHEN $2::deployment_status IN ('CANCELLED'::deployment_status,'COMPLETED'::deployment_status,'FAILED'::deployment_status) THEN COALESCE(completed_at, now()) ELSE NULL END WHERE id=$1 RETURNING id, status`, [params.data.id, body.data.status]);
+    await client.query('COMMIT');
+    return rows[0];
+  } catch (error) { await client.query('ROLLBACK'); throw error; } finally { client.release(); }
+});
+
 app.post('/api/deployments/:id/start', async (request, reply) => {
   const params = z.object({ id: z.string().uuid() }).safeParse(request.params);
   if (!params.success) return reply.code(400).send({ error: 'A valid deployment ID is required.' });
@@ -250,10 +303,10 @@ app.post('/api/deployments', async (request, reply) => {
   const client = await db.connect();
   try {
     await client.query('BEGIN');
-    const firmware = await client.query('SELECT product, hardware_version, version, status FROM firmware_versions WHERE id=$1', [input.firmwareId]);
+    const firmware = await client.query(`SELECT CASE WHEN lower(product)='datameter' THEN 'DM' ELSE product END AS product, CASE WHEN product IN ('DM','Datameter') AND hardware_version ~ '^(4|8|16)$' THEN 'ESP32-S3' ELSE hardware_version END AS hardware_version, COALESCE(flash_size_mb, CASE WHEN product IN ('DM','Datameter') AND hardware_version ~ '^(4|8|16)$' THEN hardware_version::integer END) AS flash_size_mb, version, status FROM firmware_versions WHERE id=$1`, [input.firmwareId]);
     if (!firmware.rowCount) { await client.query('ROLLBACK'); return reply.code(404).send({ error: 'Firmware not found.' }); }
     if (firmware.rows[0].status !== 'READY') { await client.query('ROLLBACK'); return reply.code(409).send({ error: 'Only READY firmware can be assigned to a deployment.' }); }
-    const compatible = await client.query('SELECT id FROM devices WHERE id = ANY($1::uuid[]) AND product=$2 AND hardware_version=$3', [input.deviceIds, firmware.rows[0].product, firmware.rows[0].hardware_version]);
+    const compatible = await client.query(`SELECT id FROM devices WHERE id = ANY($1::uuid[]) AND CASE WHEN lower(product)='datameter' OR device_uid ~* '^DM-[0-9]+' THEN 'DM' ELSE product END=$2 AND hardware_version=$3 AND ($2='DM' OR flash_size_mb=$4)`, [input.deviceIds, firmware.rows[0].product, firmware.rows[0].hardware_version, firmware.rows[0].flash_size_mb]);
     if (compatible.rowCount !== input.deviceIds.length) { await client.query('ROLLBACK'); return reply.code(400).send({ error: 'One or more selected devices are not compatible with this firmware.' }); }
     const deployment = await client.query(`INSERT INTO deployments(name, firmware_id, status, rollout_type, max_concurrency, created_by) VALUES ($1,$2,'READY','SELECTED_DEVICES',$3,$4) RETURNING id, status`, [input.name, input.firmwareId, input.maxConcurrency, input.createdBy]);
     await client.query('INSERT INTO deployment_devices(deployment_id, device_id) SELECT $1, unnest($2::uuid[])', [deployment.rows[0].id, input.deviceIds]);
@@ -263,5 +316,5 @@ app.post('/api/deployments', async (request, reply) => {
   } catch (error) { await client.query('ROLLBACK'); throw error; } finally { client.release(); }
 });
 
-try { await migrate(); await ensureInitialAdmin(); mqttClient = startMqtt(db, app.log); startDeploymentWorker(db, mqttClient, app.log); await app.listen({ port: Number(process.env.API_PORT ?? 3000), host: '0.0.0.0' }); }
+try { await migrate(); await ensureInitialAdmin(); mqttClient = startMqtt(db, app.log, notifyDeviceChanged); startDeploymentWorker(db, mqttClient, app.log); await app.listen({ port: Number(process.env.API_PORT ?? 3000), host: '0.0.0.0' }); }
 catch (error) { app.log.error(error); process.exit(1); }

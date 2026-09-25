@@ -1,0 +1,2 @@
+.device-check-disabled{opacity:.65;background:#fafbfd}.device-check input:disabled{cursor:not-allowed}.device-incompatible{color:#ad6c43!important}
+.deployment-status-control{display:grid;grid-template-columns:1fr auto;gap:7px;margin:14px 0;padding:11px;background:#f8f9fc;border-radius:8px}.deployment-status-control label{grid-column:1/-1}.deployment-status-control select{min-width:0;padding:7px;border:1px solid #dfe5ee;border-radius:7px;background:white;color:#506079;font-size:11px}
