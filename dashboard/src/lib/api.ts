@@ -8,9 +8,13 @@ export class ApiError extends Error {
   constructor(message: string, public readonly status: number) { super(message); }
 }
 
-// Empty keeps the existing same-origin /api behaviour for Docker and local dev.
-// Set VITE_API_BASE_URL=https://api.example.com when building for Cloudflare.
-const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL ?? '').replace(/\/$/, '');
+// The Cloudflare-hosted dashboard has no same-origin backend. Keep local and
+// Docker development relative, while production calls the dedicated API host.
+const productionApiBaseUrl = window.location.hostname === 'ota.limelightit.io'
+  ? 'https://api.ota.limelightit.io'
+  : '';
+// An explicit build-time value always takes precedence for other deployments.
+const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL ?? productionApiBaseUrl).replace(/\/$/, '');
 export const apiUrl = (path: string) => `${apiBaseUrl}${path}`;
 
 async function api<T>(path: string, token: string, init: RequestInit = {}): Promise<T> {
