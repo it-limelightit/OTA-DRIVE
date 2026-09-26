@@ -5,7 +5,7 @@ MVP foundation for safely managing ESP32-C5 firmware deployments.
 ## Local start
 
 1. Copy `.env.example` to `.env` and replace the development-only secrets.
-2. Start infrastructure: `docker compose up -d postgres minio mosquitto`.
+2. Start infrastructure: `docker compose up -d postgres minio`.
 3. Install application packages: `npm.cmd install`.
 4. Start both applications: `npm.cmd run dev`.
 
