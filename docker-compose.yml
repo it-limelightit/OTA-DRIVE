@@ -22,11 +22,6 @@ services:
     ports: ["9000:9000", "9001:9001"]
     volumes: [minio-data:/data]
 
-  mosquitto:
-    image: eclipse-mosquitto:2
-    ports: ["1883:1883"]
-    volumes: ["./infrastructure/mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro"]
-
   backend:
     build:
       context: .
@@ -38,7 +33,7 @@ services:
       JWT_SECRET: ${JWT_SECRET}
       ADMIN_EMAIL: ${ADMIN_EMAIL}
       ADMIN_PASSWORD: ${ADMIN_PASSWORD}
-      MQTT_URL: mqtt://mosquitto:1883
+      MQTT_URL: ${MQTT_URL}
       # Containers reach MinIO by its Compose service name. The .env endpoint
       # (localhost:9000) remains for non-Docker development mode.
       S3_ENDPOINT: http://minio:9000
@@ -53,8 +48,6 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
-      mosquitto:
-        condition: service_started
     ports: ["3000:3000"]
 
   dashboard:

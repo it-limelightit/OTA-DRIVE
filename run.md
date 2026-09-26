@@ -32,7 +32,7 @@
                                                                                                                 
   For development mode instead of Docker containers:                                                            
                                                                                                                 
-  docker compose up -d postgres minio mosquitto                                                                 
+  docker compose up -d postgres minio
   npm.cmd run dev                                                                                               
                                                                                                                 
   Then open http://localhost:5173.                                                                              

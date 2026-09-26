@@ -1,0 +1,31 @@
+# VPS application-only deployment. It deliberately does NOT define PostgreSQL,
+# MinIO, or Mosquitto: those are your already-running shared containers.
+services:
+  backend:
+    container_name: limelight-ota-backend
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    env_file:
+      - .env.backend.vps
+    environment:
+      NODE_ENV: production
+      API_PORT: 3000
+    restart: unless-stopped
+    ports:
+      # Your VPS reverse proxy (Caddy/Nginx) should proxy to this port.
+      # It is not exposed publicly by Docker.
+      - "127.0.0.1:3000:3000"
+    networks:
+      - shared-postgres
+      - ota-infrastructure
+
+networks:
+  # Name these after checking `docker network ls` on the VPS.
+  # These are external networks: Compose will never create or remove them.
+  shared-postgres:
+    external: true
+    name: ${POSTGRES_NETWORK}
+  ota-infrastructure:
+    external: true
+    name: ${OTA_INFRA_NETWORK}
